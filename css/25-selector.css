@@ -5,6 +5,12 @@
   color:inherit;
 }
 
+/* 가상 요소 선택자 */
+::selection {
+  background: #373e6a;
+  color: hotpink;
+}
+
 /* 태그 선택자 */
 body {
   font-family: "SUIT";
@@ -20,15 +26,70 @@ body {
   text-shadow: 4px 4px 3px #77f;
 }
 
+.align {
+  text-align: center;
+}
+
 ul.menu{
   margin: 0;
   padding-left: 0;
-  color: #f00;
+  color: #0f0;
 }
 
 /* id 선택자 */
 #demo{
   border: red 5px solid;
+}
+
+/* 속성 선택자 */
+.menu a[href$=".html"] {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+/* 선택자 그룹핑 */
+.fancy, .menu{
+  font-size: 24px;
+}
+
+
+/* 가상 요소 선택자 */
+/* 마크업에 있어야하는 요소인데 가상요소로 삽입함 */
+.align::before{
+  content: "이전 요소";
+}
+
+.align::after{
+  content: "다음 요소";
+}
+
+/* 가상 클래스 */
+/* 
+.menu li:nth-child(-n+2){
+  color: yellow;
+} 
+*/
+
+
+/* 가상 클래스 */
+/* 
+.menu li:nth-child(n+6){
+  color: yellow;
+} 
+*/
+/* 
+.menu li:nth-child(-n+2),
+.menu li:nth-child(n+6){
+  color: yellow;
+}
+*/
+
+.menu li:nth-child(odd) {
+  color: yellow;
+}
+
+.menu a:hover{
+  border: 5px solid orange;
 }
 
 
