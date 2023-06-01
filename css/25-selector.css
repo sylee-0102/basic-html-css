@@ -1,1 +1,44 @@
 /* CSS 선택자(Selector) */
+
+/* 전체 선택자에 모두 할당되는 값 */
+*{
+  color:inherit;
+}
+
+/* 태그 선택자 */
+body {
+  font-family: "SUIT";
+  font-weight: 300;
+  margin: 0;
+  background-color: #000;
+  color: hsla(110, 100%, 100%, 1);
+}
+
+/* class 선택자 */
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+ul.menu{
+  margin: 0;
+  padding-left: 0;
+  color: #f00;
+}
+
+/* id 선택자 */
+#demo{
+  border: red 5px solid;
+}
+
+
+
+/* 주석달기! */
+
+/* 색상 지정하는 방법 */
+/* rgba */
+/* # */
+
+
+
+
