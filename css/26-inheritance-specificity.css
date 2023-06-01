@@ -1,4 +1,35 @@
 body {
   font-family: "SUIT";
-  font-weight: 300;
+  font-weight: 700;
+}
+
+/* 급행으로 사용하는 것이 훨씬 좋음!!
+생략할 수 있는 것은 생략할 수 있도록 짜기 */
+
+/* 
+.menu {
+  color: gray;
+}
+
+.menu li a {
+  color: inherit;
+} */
+
+
+.menu {
+  color: gray;
+  font-size: 36px;
+  border: dashed 5px green;
+}
+
+ul .menu li{
+  background-color: pink !important;
+}
+
+li.pick{
+  background-color: yellow;
+}
+
+.menu a {
+  color: inherit;
 }
